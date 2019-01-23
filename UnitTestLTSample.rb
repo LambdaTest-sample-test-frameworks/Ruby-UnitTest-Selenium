@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require 'test/unit'
 require_relative  "readConf"
 
-class AdvanceTest < Test::Unit::TestCase
+class UnitTestLTSample < Test::Unit::TestCase
 
     def setup
 		config = ReadConfig.new()	
@@ -31,8 +31,8 @@ class AdvanceTest < Test::Unit::TestCase
 			:browserName => lt_browser,			
 			:version => lt_browser_version,			
 			:platform =>  lt_os,
-			:name =>  "RubyRSpecTestSample",
-			:build =>  "LambdaTestSampleApp",       
+			:name =>  "UnitTest Sample Test",
+			:build =>  "UnitTest Selenium Test",       
 			:network =>  true,
 			:visual =>  true,
 			:video =>  true,
@@ -40,12 +40,12 @@ class AdvanceTest < Test::Unit::TestCase
 		} 	
 		puts (caps)
 		@driver = Selenium::WebDriver.for(:remote,
-			:url => "https://"+lt_user+":"+lt_appkey+"@stage-hub.lambdatest.com/wd/hub",
+			:url => "https://"+lt_user+":"+lt_appkey+"@hub.lambdatest.com/wd/hub",
 			:desired_capabilities => caps)
 		
 		@driver.manage.window.maximize
 		
-		@driver.get("https://4dvanceboy.github.io/lambdatest/lambdasampleapp.html" )
+		@driver.get("https://lambdatest.github.io/sample-todo-app/" )
 	end
 
     def test_Login
