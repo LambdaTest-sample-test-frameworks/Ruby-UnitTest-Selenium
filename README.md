@@ -8,4 +8,4 @@
 * Update Lambdatest user and appkey in config.conf file
 
 # Execution
-* run command ruby LambdaTest.rb
+* run command ruby UnitTestLTSample.rb
