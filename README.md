@@ -2,9 +2,6 @@
 
 ![LambdaTest Logo](https://www.lambdatest.com/static/images/logo.svg)
 
-<img src = 'http://rspec.info/images/logo.png' height="95">
-
-
 ## Setup
 * Clone the repo
 * Install dependencies `bundle install`
