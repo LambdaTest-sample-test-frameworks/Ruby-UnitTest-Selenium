@@ -2,5 +2,5 @@
 source "https://rubygems.org"
 
 gem "test-unit"
-gem "selenium-webdriver"
+gem "selenium-webdriver" , "3.142.7"
 gem 'parseconfig'
